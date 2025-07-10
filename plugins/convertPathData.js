@@ -858,13 +858,21 @@ function filters(
             return i === 0;
           })
         ) {
-          path[index] = prev;
+          // When removing useless commands, preserve coordinate tracking by 
+          // ensuring prev maintains the correct coordinates
+          if (prev.coords) {
+            // @ts-expect-error
+            prev.coords = item.coords;
+          }
           return false;
         }
 
         // a 25,25 -30 0,1 0,0
         if (command === 'a' && data[5] === 0 && data[6] === 0) {
-          path[index] = prev;
+          if (prev.coords) {
+            // @ts-expect-error
+            prev.coords = item.coords;
+          }
           return false;
         }
       }
