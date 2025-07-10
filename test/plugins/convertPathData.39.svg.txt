@@ -1,0 +1,17 @@
+Accumulated error handling with floatPrecision=0 (handles mixed fractional coordinates)
+
+===
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path d="M 0 0 l 0.7 0.3 l 0.4 0.8 l 0.9 0.9 l 1 1"/>
+</svg>
+
+@@@
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h1v1l1 1 1 1"/>
+</svg>
+
+@@@
+
+{ "floatPrecision": 0, "convertToZ": false }

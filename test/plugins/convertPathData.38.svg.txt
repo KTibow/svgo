@@ -1,0 +1,17 @@
+Accumulated error handling with floatPrecision=0 (preserves cumulative small moves)
+
+===
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path d="M 0 0 l 0.6 0.6 l 0.6 0.6 l 0.8 0.8 l 1 1"/>
+</svg>
+
+@@@
+
+<svg xmlns="http://www.w3.org/2000/svg">
+    <path d="m0 0 1 1 1 1 1 1"/>
+</svg>
+
+@@@
+
+{ "floatPrecision": 0, "convertToZ": false }
