@@ -858,7 +858,7 @@ function filters(
             return i === 0;
           })
         ) {
-          // When removing useless commands, preserve coordinate tracking by 
+          // When removing useless commands, preserve coordinate tracking by
           // ensuring prev maintains the correct coordinates
           if (prev.coords) {
             // @ts-expect-error
