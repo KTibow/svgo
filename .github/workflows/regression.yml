@@ -5,6 +5,9 @@ env:
   REPO: 'svg/svgo'
 
 on:
+  push:
+    branches:
+      - tmp-check-regression
   pull_request:
     branches:
       - main
