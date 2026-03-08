@@ -91,7 +91,7 @@ const extractTarGz = async (url, baseDir) => {
   try {
     console.info('Using temporary directory: %s\n', TEMP_DIR_PATH);
     await extractTarGz(
-      'https://svg.github.io/svgo-test-suite/svgo-test-suite.tar.gz',
+      'https://kendell.dev/svgo-test-suite/svgo-test-suite.tar.gz',
       REGRESSION_FIXTURES_PATH,
     );
   } catch (error) {
